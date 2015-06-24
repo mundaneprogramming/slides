@@ -1,7 +1,8 @@
 # very dangerous...
-# but I got the idea here:
 #
 gh_tmpdir="/tmp/jekyllreveal/$(date -I)"
+mkdir -p $gh_tmpdir
+
 echo "WARNING: This script essentially wipes clean gh-pages and does a git
    force push to update the branch.
 
