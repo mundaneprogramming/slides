@@ -5,15 +5,16 @@ gh_tmpdir="/tmp/jekyllreveal/$(date -I)"
 echo "WARNING: This script essentially wipes clean gh-pages and does a git
    force push to update the branch.
 
-   The temp directory $gh_tmpdir has been created and _site/* will
-   be moved into it during the git checkout -B gh-pages and rm -r *
+   - The temp directory $gh_tmpdir has been created
+   and _site/* will be moved into it during the
+   git checkout -B gh-pages and rm -r *
 
    BUT...sleeping for 10 seconds just in case you get the heebie jeebies
 
    idea stolen from here:
    http://blog.nitrous.io/2013/08/30/using-jekyll-plugins-on-github-pages.html
 "
-sleep(10)
+sleep 10
 mv _site/* $gh_tmpdir
 jekyll build
 ## now move site over
