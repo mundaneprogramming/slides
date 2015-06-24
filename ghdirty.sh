@@ -9,12 +9,16 @@ echo "WARNING: This script essentially wipes clean gh-pages and does a git
    and _site/* will be moved into it during the
    git checkout -B gh-pages and rm -r *
 
-   BUT...sleeping for 10 seconds just in case you get the heebie jeebies
+   BUT...sleeping for 5 seconds just in case you get the heebie jeebies
 
    idea stolen from here:
    http://blog.nitrous.io/2013/08/30/using-jekyll-plugins-on-github-pages.html
 "
-sleep 10
+for i in 5 4 3 2 1 0; do
+  echo $i...
+  sleep 1
+done
+
 mv _site/* $gh_tmpdir
 jekyll build
 ## now move site over
