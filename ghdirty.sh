@@ -1,11 +1,23 @@
 # very dangerous...
-jekyll build
+# but I got the idea here:
+#
 gh_tmpdir="/tmp/jekyllreveal/$(date -I)"
-echo Saving to $gh_tmpdir
-## now move site over
+echo "WARNING: This script essentially wipes clean gh-pages and does a git
+   force push to update the branch.
+
+   The temp directory $gh_tmpdir has been created and _site/* will
+   be moved into it during the git checkout -B gh-pages and rm -r *
+
+   BUT...sleeping for 10 seconds just in case you get the heebie jeebies
+
+   idea stolen from here:
+   http://blog.nitrous.io/2013/08/30/using-jekyll-plugins-on-github-pages.html
+"
+sleep(10)
 mv _site/* $gh_tmpdir
-git checkout -B gh-pages
-rm -r *
+jekyll build
+## now move site over
+git checkout -B gh-pages && rm -r *
 mv $gh_tmpdir/* .
 git add .
 git commit -am "Hello update at $(date -I)"
