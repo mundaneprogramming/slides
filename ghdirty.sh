@@ -1,7 +1,6 @@
 # very dangerous...
 #
 gh_tmpdir="/tmp/jekyllreveal/$(date -I)"
-mkdir -p $gh_tmpdir
 
 echo "WARNING: This script essentially wipes clean gh-pages and does a git
    force push to update the branch.
@@ -20,10 +19,14 @@ for i in 5 4 3 2 1 0; do
   sleep 1
 done
 
-mv _site/* $gh_tmpdir
+# Build the _site
 jekyll build
-## now move site over
+# Move it to temp storage
+mkdir -p $gh_tmpdir
+mv _site/* $gh_tmpdir
+# now checkout branch and wipe it out
 git checkout -B gh-pages && rm -r *
+# move tmp directory back
 mv $gh_tmpdir/* .
 git add .
 git commit -am "Hello update at $(date -I)"
