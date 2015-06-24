@@ -1,3 +1,5 @@
 ## Getting Started
 
-Just open stuff up.
+Just do stuff.
+
+Find examples and stuff here: [mundaneprogramming.github.io](http://mundaneprogramming.github.io/)
