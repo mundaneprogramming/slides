@@ -1,41 +1,4 @@
-# Make Reproducibility Work For You
 
-If you run out of small tools to build for yourself, then tackle side projects that are interesting, but not life/deadline-dependent.
-
---
-
-Reproducibility, aka _replication_, is considered an _ideal_ in the pursuit of scientific research, but [is often too burdensome to be made a requirement](http://www.nature.com/news/first-results-from-psychology-s-largest-reproducibility-test-1.17433):
-
-
---
-
-
-[How to avoid making an Excel mistake like Rogoff and Reinhart - Quartz (qz.com)](http://qz.com/75119/how-to-avoid-making-an-excel-mistake-like-rogoff-and-reinhart/) 
-
-<img data-src="images/reinhartrogoffexcelqz.png">
-
---
-
-In programming, a deterministic and predictable process is not only feasible, but is a natural consequence of how code works. It makes re-running complex tasks trivial (once you've run it _once_)
-
-
---
-
-And this is key to making things __automatable_
-
-...but you don't have to go full automation. Take it one step at a time. At the very least, you'll be able to stop on a mini-project and, when you can get back to it, start exactly where you were before.
-
-
-
---
-
-## Excel is not that bad
-
-Don't get me wrong, Excel (or any other modern spreadsheet) is the most ubiquitous, bang-for-your buck tool that you can learn.
-
-But its designers can't account for all of the weird, sloppy ways that data gets transmitted {% fragment %}
-
---
 
 ## California education data sprawl
 

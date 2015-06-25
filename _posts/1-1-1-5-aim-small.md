@@ -49,3 +49,6 @@ quickiegiffie()
 
 No task is too small to practice on.
 
+--
+
+If you run out of small tools to build for yourself, then tackle side projects that are interesting, but not life/deadline-dependent.
