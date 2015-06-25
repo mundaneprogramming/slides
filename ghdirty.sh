@@ -29,7 +29,7 @@ git checkout -B gh-pages && rm -r *
 # move tmp directory back
 mv $gh_tmpdir/* .
 git add .
-git commit -am "Hello update at $(date -I)"
+git commit -am "Hello update at $(date +'%Y-%m-%dT%H:%M:%SZ')"
 git push origin gh-pages --force
 git checkout master
 echo "YOLO"
