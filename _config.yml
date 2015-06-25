@@ -1,5 +1,6 @@
 # Your presentation title
-title: Jekyll and Reveal.js
+title: Mundane Programming at SRCCON 2015
+google_analytics_id: "UA-64284356-1"
 
 # The Reveal theme
 reveal_theme: solarized.css
