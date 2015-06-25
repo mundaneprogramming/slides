@@ -2,7 +2,7 @@
 title: Jekyll and Reveal.js
 
 # The Reveal theme
-reveal_theme: black.css
+reveal_theme: solarized.css
 
 # The Reveal transition
 reveal_transition: default
